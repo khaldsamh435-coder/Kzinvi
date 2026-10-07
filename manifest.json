@@ -1,0 +1,25 @@
+{
+  "name": "Kzinvi",
+  "short_name": "Kzinvi",
+  "description": "مدير مالي شخصي لتنظيم الدخل والمصروفات والادخار وأهداف الشراء",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "categories": [
+    "finance",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "https://files.catbox.moe/ssjkxp.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

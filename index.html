@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#07111f">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#07111f">
+<title>FinTrack Pro — الإدارة المالية الشخصية</title>
+<style>
+:root{--bg:#06101d;--panel:#0c1929;--panel2:#102239;--line:#1b3048;--text:#f4f7fb;--muted:#8ea0b7;--green:#2dd889;--red:#ff6472;--blue:#52a8ff;--yellow:#f6c65b;--purple:#9b8cff;--shadow:0 22px 70px #0005}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at 8% 0,#16365a55,transparent 28%),radial-gradient(circle at 100% 10%,#174b3850,transparent 25%),var(--bg);color:var(--text);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}header{position:sticky;top:0;z-index:50;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:#06101dcc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:11px}.brandIcon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,var(--green),var(--blue));font-size:21px}.brand b{font-size:19px}.brand small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.actions{display:flex;gap:8px}.icon{width:40px;height:40px;border:1px solid var(--line);border-radius:11px;background:#ffffff08;color:#fff}.icon:hover{border-color:#52a8ff66;background:#52a8ff12}main{width:min(1450px,94%);margin:auto;padding:28px 0 70px}.hero{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#10233a,#0a1727);box-shadow:var(--shadow);overflow:hidden;position:relative;margin-bottom:20px}.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;left:-130px;top:-200px;background:#2dd88914;filter:blur(10px)}.hero>*{position:relative;z-index:1}.eyebrow{color:var(--green);font-size:12px;font-weight:bold;margin-bottom:8px}.hero h1{font-size:clamp(28px,4vw,48px);line-height:1.15;margin-bottom:10px}.hero p{color:var(--muted);line-height:1.9;max-width:720px}.datebox{min-width:185px;text-align:center;padding:20px;border:1px solid var(--line);border-radius:17px;background:#ffffff06}.datebox strong{display:block;color:var(--green);font-size:30px}.datebox span{color:var(--muted);font-size:12px}.toolbar{display:grid;grid-template-columns:1.4fr .6fr;gap:15px;margin-bottom:20px}.panel{background:#0c1929dd;border:1px solid var(--line);border-radius:19px;padding:21px;box-shadow:0 12px 40px #0002}.title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.title h2,.title h3{font-size:17px}.title small{color:var(--muted)}.incomeForm{display:flex;gap:10px}.input{height:46px;width:100%;padding:0 13px;border:1px solid var(--line);border-radius:10px;background:#ffffff06;color:#fff;outline:none}.input:focus{border-color:#52a8ff88;box-shadow:0 0 0 3px #52a8ff12}.input::placeholder{color:#63758b}.input option{background:#102239}.btn{border:0;border-radius:10px;padding:0 18px;min-height:46px;font-weight:bold;color:#fff;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.green{background:linear-gradient(135deg,var(--green),#18a866);color:#03150d}.blue{background:linear-gradient(135deg,var(--blue),#3978ff)}.red{background:#ff647214;color:var(--red);border:1px solid #ff64722c}.gray{background:#ffffff08;border:1px solid var(--line)}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}.stat{padding:19px;border:1px solid var(--line);border-radius:17px;background:#0c1929d9;min-width:0}.stat .sicon{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;margin-bottom:15px;background:#ffffff08}.stat small{color:var(--muted);display:block;margin-bottom:5px}.stat strong{font-size:22px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.g{color:var(--green)}.r{color:var(--red)}.b{color:var(--blue)}.y{color:var(--yellow)}.p{color:var(--purple)}.layout{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-bottom:20px}.chart{height:315px}.chart canvas{width:100%;height:100%}.ringArea{text-align:center}.ring{width:190px;height:190px;margin:20px auto;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(var(--green) 0deg,#ffffff0d 0deg)}.ring:after{content:"";position:absolute;width:143px;height:143px;border-radius:50%;background:#0c1929}.ringText{position:relative;z-index:2}.ringText b{display:block;font-size:32px}.ringText span{color:var(--muted);font-size:11px}.miniNote{color:var(--muted);line-height:1.8;font-size:13px}.sectionGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}.budgetRow{margin-bottom:15px}.budgetHead{display:flex;justify-content:space-between;color:#c7d1de;font-size:12px;margin-bottom:7px}.bar{height:8px;background:#ffffff09;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px;transition:1s}.goal{padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;background:#ffffff04}.goalHead{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px}.goalHead b{font-size:13px}.goalHead span{font-size:12px;color:var(--muted)}.goalActions{display:flex;gap:7px;margin-top:10px}.goalActions button{min-height:32px;padding:0 10px;font-size:11px}.candles{margin-bottom:20px}.candleChart{height:330px;display:flex;align-items:stretch;gap:10px;overflow-x:auto;padding:15px 5px}.month{min-width:70px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:space-between}.candleArea{height:250px;width:100%;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--line)}.wick{position:absolute;width:2px;background:#ffffff55;height:78%}.body{width:25px;min-height:12px;border-radius:4px;animation:grow .7s ease}.up{background:linear-gradient(#35e58c,#159b59);box-shadow:0 0 18px #2dd88922}.down{background:linear-gradient(#ff7180,#c83a49);box-shadow:0 0 18px #ff647222}@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}.month label{color:var(--muted);font-size:11px;margin-top:8px}.month small{font-size:10px;margin-top:3px}.tableTools{display:flex;gap:9px;margin-bottom:15px}.tableWrap{overflow:auto}table{width:100%;min-width:760px;border-collapse:collapse}th{text-align:right;color:#718198;font-size:11px;font-weight:normal;padding:11px 9px;border-bottom:1px solid var(--line)}td{padding:13px 9px;border-bottom:1px solid #ffffff07;font-size:12px}tr:hover{background:#ffffff03}.pill{display:inline-block;padding:5px 9px;border-radius:8px;font-size:10px}.pill.exp{background:#ff647210;color:var(--red)}.pill.inc{background:#2dd88910;color:var(--green)}.del{width:32px;height:32px;border:1px solid #ff647222;border-radius:8px;background:#ff647210;color:var(--red)}.empty{text-align:center;padding:45px;color:var(--muted)}.modal{position:fixed;inset:0;z-index:200;display:none;place-items:center;padding:15px;background:#000b;backdrop-filter:blur(7px)}.modal.show{display:grid}.modalBox{width:min(590px,100%);background:#0c1929;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 30px 100px #0008}.modalHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.close{border:0;background:none;color:#8ea0b7;font-size:23px}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field label{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.full{grid-column:1/-1}.modalActions{display:flex;gap:9px;margin-top:16px}.modalActions .btn{flex:1}.toast{position:fixed;bottom:22px;left:22px;z-index:300;background:#13243a;border:1px solid var(--line);padding:12px 17px;border-radius:10px;transform:translateY(80px);opacity:0;transition:.3s}.toast.show{transform:none;opacity:1}.footer{text-align:center;color:#62738a;font-size:11px;padding:20px}.dangerZone{margin-top:15px;padding-top:15px;border-top:1px solid var(--line)}@media(max-width:1100px){.stats{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}}@media(max-width:800px){main{width:94%;padding-top:18px}.hero{flex-direction:column;align-items:stretch;padding:24px}.datebox{min-width:0}.toolbar,.sectionGrid{grid-template-columns:1fr}.incomeForm{flex-direction:column}.stats{grid-template-columns:1fr 1fr}.formGrid{grid-template-columns:1fr}.full{grid-column:auto}}@media(max-width:450px){.stats{grid-template-columns:1fr}.brand small{display:none}.brand b{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="brandIcon">💰</div><div><b>FinTrack Pro</b><small>إدارة مالية شخصية</small></div></div>
+  <div class="actions"><button class="icon" onclick="openSettings()">⚙️</button><button class="icon" onclick="exportData()">↓</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div><div class="eyebrow">لوحتك المالية الذكية</div><h1>اعرف فلوسك رايحة فين.</h1><p>تابع دخلك ومصروفاتك وميزانياتك وأهداف الادخار، وشاهد تغير وضعك المالي مباشرة بعد كل عملية.</p></div>
+  <div class="datebox"><strong id="day">--</strong><span id="dateText">--</span></div>
+</section>
+
+<section class="toolbar">
+  <div class="panel">
+    <div class="title"><h2>💵 الدخل الأساسي للشهر</h2><small>يمكن تغييره في أي وقت</small></div>
+    <div class="incomeForm"><input id="income" class="input" type="number" min="0" placeholder="مثال: 5000"><button class="btn green" onclick="saveIncome()">حفظ الدخل</button></div>
+  </div>
+  <div class="panel">
+    <div class="title"><h2>💳 الرصيد المتاح</h2></div>
+    <strong id="available" class="g" style="font-size:27px">0 ج.م</strong>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="sicon g">↗</div><small>إجمالي الدخل</small><strong id="sIncome" class="g">0</strong></div>
+  <div class="stat"><div class="sicon r">↘</div><small>إجمالي المصروف</small><strong id="sExpense" class="r">0</strong></div>
+  <div class="stat"><div class="sicon b">🏦</div><small>المدخر</small><strong id="sSaved" class="b">0</strong></div>
+  <div class="stat"><div class="sicon y">%</div><small>نسبة الادخار</small><strong id="sRate" class="y">0%</strong></div>
+  <div class="stat"><div class="sicon p">⚡</div><small>متوسط المصروف اليومي</small><strong id="sDaily" class="p">0</strong></div>
+  <div class="stat"><div class="sicon y">●</div><small>الحالة</small><strong id="status" class="g">منتظم</strong></div>
+</section>
+
+<section class="layout">
+  <div class="panel">
+    <div class="title"><h2>📈 المصروفات اليومية</h2><small>آخر 14 يومًا</small></div>
+    <div class="chart"><canvas id="chart"></canvas></div>
+  </div>
+  <div class="panel ringArea">
+    <div class="title" style="width:100%"><h2>🎯 الادخار</h2><small>من الدخل</small></div>
+    <div class="ring" id="ring"><div class="ringText"><b id="ringText">0%</b><span>نسبة الادخار</span></div></div>
+    <p id="savingMsg" class="miniNote">أدخل دخلك وسجل عملياتك لمشاهدة التحليل.</p>
+  </div>
+</section>
+
+<section class="sectionGrid">
+  <div class="panel">
+    <div class="title"><h2>🎯 أهداف الادخار</h2><button class="btn blue" onclick="openGoal()">+ هدف</button></div>
+    <div id="goals"></div>
+  </div>
+  <div class="panel">
+    <div class="title"><h2>📊 ميزانيات التصنيفات</h2><button class="btn blue" onclick="openBudget()">+ ميزانية</button></div>
+    <div id="budgets"></div>
+  </div>
+</section>
+
+<section class="panel candles">
+  <div class="title"><div><h2>🕯️ الشموع المالية</h2><small>الدخل مقابل المصروف لكل شهر</small></div><span class="g">▲ ادخار &nbsp; ▼ عجز</span></div>
+  <div class="candleChart" id="candles"></div>
+</section>
+
+<section class="panel">
+  <div class="title"><div><h2>📋 سجل العمليات</h2><small>كل عملية محفوظة محليًا</small></div><button class="btn green" onclick="openAdd()">+ عملية جديدة</button></div>
+  <div class="tableTools"><input id="search" class="input" placeholder="بحث..." oninput="render()"><select id="filter" class="input" style="max-width:180px" onchange="render()"><option value="all">كل العمليات</option><option value="expense">مصروفات</option><option value="income">دخل</option></select></div>
+  <div class="tableWrap"><table><thead><tr><th>النوع</th><th>الوصف</th><th>التصنيف</th><th>التاريخ</th><th>المبلغ</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+</section>
+</main>
+
+<div class="footer">FinTrack Pro — البيانات محفوظة على هذا المتصفح فقط.</div>
+
+<div class="modal" id="addModal"><div class="modalBox">
+  <div class="modalHead"><h3>إضافة عملية</h3><button class="close" onclick="closeModal('addModal')">×</button></div>
+  <div class="formGrid">
+    <div class="field"><label>النوع</label><select id="tType" class="input"><option value="expense">💸 مصروف</option><option value="income">💰 دخل إضافي</option></select></div>
+    <div class="field"><label>المبلغ</label><input id="tAmount" class="input" type="number" min="0"></div>
+    <div class="field"><label>التصنيف</label><select id="tCat" class="input"><option>طعام</option><option>مواصلات</option><option>دراسة</option><option>ترفيه</option><option>ملابس</option><option>صحة</option><option>فواتير</option><option>تسوق</option><option>ادخار</option><option>أخرى</option></select></div>
+    <div class="field"><label>التاريخ</label><input id="tDate" class="input" type="date"></div>
+    <div class="field full"><label>الوصف</label><input id="tDesc" class="input" placeholder="مثال: غداء، مواصلات، شراء كتاب..."></div>
+  </div>
+  <div class="modalActions"><button class="btn green" onclick="addTransaction()">حفظ</button><button class="btn red" onclick="closeModal('addModal')">إلغاء</button></div>
+</div></div>
+
+<div class="modal" id="goalModal"><div class="modalBox">
+  <div class="modalHead"><h3>هدف ادخار جديد</h3><button class="close" onclick="closeModal('goalModal')">×</button></div>
+  <div class="formGrid">
+    <div class="field"><label>اسم الهدف</label><input id="gName" class="input" placeholder="مثال: هاتف جديد"></div>
+    <div class="field"><label>المبلغ المطلوب</label><input id="gTarget" class="input" type="number" min="1"></div>
+    <div class="field full"><label>المبلغ الموجود حاليًا</label><input id="gCurrent" class="input" type="number" min="0" value="0"></div>
+  </div>
+  <div class="modalActions"><button class="btn green" onclick="addGoal()">إضافة الهدف</button><button class="btn red" onclick="closeModal('goalModal')">إلغاء</button></div>
+</div></div>
+
+<div class="modal" id="budgetModal"><div class="modalBox">
+  <div class="modalHead"><h3>ميزانية تصنيف</h3><button class="close" onclick="closeModal('budgetModal')">×</button></div>
+  <div class="formGrid">
+    <div class="field"><label>التصنيف</label><select id="bCat" class="input"><option>طعام</option><option>مواصلات</option><option>دراسة</option><option>ترفيه</option><option>ملابس</option><option>صحة</option><option>فواتير</option><option>تسوق</option><option>أخرى</option></select></div>
+    <div class="field"><label>الحد الشهري</label><input id="bLimit" class="input" type="number" min="1"></div>
+  </div>
+  <div class="modalActions"><button class="btn green" onclick="addBudget()">حفظ الميزانية</button><button class="btn red" onclick="closeModal('budgetModal')">إلغاء</button></div>
+</div></div>
+
+<div class="modal" id="settingsModal"><div class="modalBox">
+  <div class="modalHead"><h3>⚙️ الإعدادات والنسخ الاحتياطي</h3><button class="close" onclick="closeModal('settingsModal')">×</button></div>
+  <p class="miniNote">يمكنك حفظ نسخة JSON من بياناتك واستعادتها لاحقًا. لا يتم إرسال البيانات إلى أي خادم.</p>
+  <div class="modalActions"><button class="btn blue" onclick="exportData()">تصدير JSON</button><label class="btn gray" style="display:grid;place-items:center">استعادة JSON<input type="file" accept=".json" onchange="importData(event)" style="display:none"></label></div>
+  <div class="dangerZone"><button class="btn red" style="width:100%" onclick="clearData()">حذف كل البيانات</button></div>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const KEY="fintrack_pro_v2";
+let data={income:0,transactions:[],goals:[],budgets:[]};
+
+const $=id=>document.getElementById(id);
+const money=n=>new Intl.NumberFormat("ar-EG",{maximumFractionDigits:0}).format(Math.round(n||0))+" ج.م";
+const today=()=>new Date().toISOString().slice(0,10);
+
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x)data={...data,...x}}catch(e){}}
+function save(){localStorage.setItem(KEY,JSON.stringify(data))}
+function toast(s){$("toast").textContent=s;$("toast").classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>$("toast").classList.remove("show"),2300)}
+function openModal(id){$(id).classList.add("show")}
+function closeModal(id){$(id).classList.remove("show")}
+function openAdd(){$("tDate").value=today();openModal("addModal")}
+function openGoal(){openModal("goalModal")}
+function openBudget(){openModal("budgetModal")}
+function openSettings(){openModal("settingsModal")}
+
+function escape(s){return String(s??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}
+function totals(){
+ let inc=Number(data.income)||0,exp=0;
+ data.transactions.forEach(t=>t.type==="expense"?exp+=+t.amount:inc+=+t.amount);
+ return {inc,exp,saved:inc-exp};
+}
+function saveIncome(){let v=+$("income").value;if(v<0||!Number.isFinite(v))return toast("اكتب دخلًا صحيحًا");data.income=v;save();update();toast("تم تحديث الدخل")}
+function addTransaction(){
+ let amount=+$("tAmount").value;if(!amount||amount<=0)return toast("أدخل مبلغًا صحيحًا");
+ data.transactions.unshift({id:Date.now(),type:$("tType").value,amount,category:$("tCat").value,date:$("tDate").value||today(),description:$("tDesc").value.trim()||$("tCat").value});
+ save();closeModal("addModal");$("tAmount").value="";$("tDesc").value="";render();update();toast("تم تسجيل العملية ✓");
+}
+function del(id){if(!confirm("حذف العملية؟"))return;data.transactions=data.transactions.filter(x=>x.id!==id);save();render();update();toast("تم الحذف")}
+function render(){
+ let q=$("search").value.toLowerCase().trim(),f=$("filter").value;
+ let a=data.transactions.filter(t=>(f==="all"||t.type===f)&&(`${t.description} ${t.category}`).toLowerCase().includes(q));
+ $("rows").innerHTML=a.length?a.map(t=>`<tr><td><span class="pill ${t.type==="expense"?"exp":"inc"}">${t.type==="expense"?"💸 مصروف":"💰 دخل"}</span></td><td>${escape(t.description)}</td><td>${escape(t.category)}</td><td>${new Date(t.date).toLocaleDateString("ar-EG")}</td><td class="${t.type==="expense"?"r":"g"}"><b>${t.type==="expense"?"-":"+"}${money(t.amount)}</b></td><td><button class="del" onclick="del(${t.id})">×</button></td></tr>`).join(""):`<tr><td colspan="6" class="empty">لا توجد عمليات.</td></tr>`;
+}
+function update(){
+ let t=totals(),rate=t.inc>0?t.saved/t.inc*100:0;
+ $("income").value=data.income||"";
+ $("sIncome").textContent=money(t.inc);$("sExpense").textContent=money(t.exp);$("sSaved").textContent=money(t.saved);
+ $("sRate").textContent=Math.round(rate)+"%";$("available").textContent=money(t.saved);
+ let days=new Date().getDate()||1;$("sDaily").textContent=money(t.exp/days);
+ let st=t.inc<=0?["أدخل دخلك","y"]:rate>=15?["منتظم","g"]:rate>=0?["متوسط","y"]:["مسرف","r"];
+ $("status").textContent=st[0];$("status").className=st[1];
+ let p=Math.max(0,Math.min(100,rate));$("ring").style.background=`conic-gradient(var(--green) ${p*3.6}deg,#ffffff0d ${p*3.6}deg)`;$("ringText").textContent=Math.round(p)+"%";
+ $("savingMsg").textContent=t.inc<=0?"أدخل دخلك أولًا.":rate>=30?"ممتاز، نسبة ادخارك قوية.":rate>=10?"جيد، ويمكن تحسين الادخار أكثر.":rate>=0?"حاول خفض بعض المصروفات.":"مصروفاتك تجاوزت دخلك.";
+draw();candles();goals();budgets();
+}
+function draw(){
+ let c=$("chart"),r=c.getBoundingClientRect(),d=devicePixelRatio||1;c.width=r.width*d;c.height=r.height*d;let x=c.getContext("2d");x.scale(d,d);
+ let w=r.width,h=r.height,pad=30,days=[],vals=[],now=new Date();
+ for(let i=13;i>=0;i--){let z=new Date(now);z.setDate(now.getDate()-i);let k=z.toISOString().slice(0,10);days.push(z);vals.push(data.transactions.filter(t=>t.type==="expense"&&t.date===k).reduce((s,t)=>s+ +t.amount,0))}
+ let max=Math.max(...vals,100);x.strokeStyle="#ffffff0b";for(let i=0;i<5;i++){let y=pad+(h-pad*2)*i/4;x.beginPath();x.moveTo(pad,y);x.lineTo(w-pad,y);x.stroke()}
+ let pts=vals.map((v,i)=>({x:pad+(w-pad*2)*i/(vals.length-1),y:h-pad-(v/max)*(h-pad*2)}));
+ x.beginPath();pts.forEach((p,i)=>i?x.lineTo(p.x,p.y):x.moveTo(p.x,p.y));x.strokeStyle="#ff6472";x.lineWidth=3;x.stroke();
+ pts.forEach((p,i)=>{x.beginPath();x.arc(p.x,p.y,3.5,0,7);x.fillStyle="#ff6472";x.fill();x.fillStyle="#718198";x.font="10px Tahoma";x.textAlign="center";x.fillText(days[i].getDate(),p.x,h-8)});
+}
+function candles(){
+ let now=new Date(),arr=[];
+ for(let i=5;i>=0;i--){let d=new Date(now.getFullYear(),now.getMonth()-i,1),m=d.getMonth(),y=d.getFullYear(),a=data.transactions.filter(t=>{let q=new Date(t.date);return q.getMonth()===m&&q.getFullYear()===y}),exp=a.filter(t=>t.type==="expense").reduce((s,t)=>s+ +t.amount,0),extra=a.filter(t=>t.type==="income").reduce((s,t)=>s+ +t.amount,0),inc=m===now.getMonth()&&y===now.getFullYear()?data.income:extra;arr.push({d,s:inc-exp})}
+ let max=Math.max(...arr.map(x=>Math.abs(x.s)),1);$("candles").innerHTML=arr.map(x=>{let up=x.s>=0,h=Math.max(15,Math.abs(x.s)/max*185);return `<div class="month"><div class="candleArea"><i class="wick"></i><i class="body ${up?"up":"down"}" style="height:${h}px"></i></div><label>${x.d.toLocaleDateString("ar-EG",{month:"short"})}</label><small class="${up?"g":"r"}">${up?"+":""}${money(x.s)}</small></div>`}).join("");
+}
+function goals(){
+ if(!data.goals.length){$("goals").innerHTML=`<div class="empty">لم تضف أهداف ادخار بعد.</div>`;return}
+ $("goals").innerHTML=data.goals.map((g,i)=>{let p=Math.min(100,(g.current/g.target)*100);return `<div class="goal"><div class="goalHead"><b>${escape(g.name)}</b><span>${money(g.current)} / ${money(g.target)}</span></div><div class="bar"><i style="width:${p}%"></i></div><div class="goalActions"><button class="btn blue" onclick="goalAdd(${i})">+ إضافة</button><button class="btn red" onclick="goalDel(${i})">حذف</button></div></div>`}).join("");
+}
+function addGoal(){let n=$("gName").value.trim(),t=+$("gTarget").value,c=+$("gCurrent").value||0;if(!n||!t||t<1)return toast("أكمل بيانات الهدف");data.goals.push({name:n,target:t,current:Math.min(c,t)});save();closeModal("goalModal");$("gName").value="";$("gTarget").value="";$("gCurrent").value=0;update();toast("تم إنشاء الهدف")}
+function goalAdd(i){let n=+prompt("كم تريد إضافته؟",100);if(!n||n<=0)return;data.goals[i].current=Math.min(data.goals[i].target,data.goals[i].current+n);save();update();toast("تم تحديث الهدف")}
+function goalDel(i){if(confirm("حذف الهدف؟")){data.goals.splice(i,1);save();update()}}
+function budgets(){
+ if(!data.budgets.length){$("budgets").innerHTML=`<div class="empty">لم تضف ميزانيات تصنيفات.</div>`;return}
+ let now=new Date();
+ $("budgets").innerHTML=data.budgets.map((b,i)=>{let spent=data.transactions.filter(t=>t.type==="expense"&&t.category===b.category&&new Date(t.date).getMonth()===now.getMonth()&&new Date(t.date).getFullYear()===now.getFullYear()).reduce((s,t)=>s+ +t.amount,0),p=Math.min(100,spent/b.limit*100);return `<div class="budgetRow"><div class="budgetHead"><span>${escape(b.category)}</span><span>${money(spent)} / ${money(b.limit)}</span></div><div class="bar"><i style="width:${p}%;background:${p>=100?"var(--red)":p>=80?"var(--yellow)":"linear-gradient(90deg,var(--blue),var(--green))"}"></i></div><div style="text-align:left;margin-top:4px"><button class="del" onclick="budgetDel(${i})">×</button></div></div>`}).join("");
+}
+function addBudget(){let c=$("bCat").value,l=+$("bLimit").value;if(!l||l<=0)return toast("أدخل حدًا صحيحًا");data.budgets=data.budgets.filter(x=>x.category!==c);data.budgets.push({category:c,limit:l});save();closeModal("budgetModal");update();toast("تم حفظ الميزانية")}
+function budgetDel(i){data.budgets.splice(i,1);save();update()}
+function exportData(){let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="fintrack-pro-backup.json";a.click();toast("تم تصدير النسخة")}
+function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);data={...data,...x};save();update();render();closeModal("settingsModal");toast("تمت الاستعادة ✓")}catch{toast("ملف غير صالح")}};r.readAsText(f)}
+function clearData(){if(confirm("سيتم حذف كل بيانات FinTrack. متأكد؟")){data={income:0,transactions:[],goals:[],budgets:[]};save();update();render();closeModal("settingsModal");toast("تم حذف البيانات")}}
+function initDate(){let d=new Date();$("day").textContent=d.getDate();$("dateText").textContent=d.toLocaleDateString("ar-EG",{weekday:"long",month:"long",year:"numeric"})}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal").forEach(x=>x.classList.remove("show"))});
+window.addEventListener("resize",draw);
+load();initDate();render();update();
+</script>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .catch(error => console.error("Service Worker Error:", error));
+  });
+}
+  </script>
+</body>
+</html>
